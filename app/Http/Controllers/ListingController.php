@@ -77,7 +77,7 @@ class ListingController extends Controller
             'public');
         } 
 
-     $listing->create($formFields);
+     $listing->update($formFields);
 
         return back()->with('message','Post updated successfully!');
     }
