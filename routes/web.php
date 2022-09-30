@@ -69,4 +69,6 @@ Route::get('register',
  'create']);
 
  //Create New user
- Route::post('users',[UserController::class, 'store']);
+ Route::post('users',
+ [UserController::class, 
+ 'store']);

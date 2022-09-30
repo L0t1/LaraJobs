@@ -22,9 +22,9 @@ class UserController extends Controller
             'password' => ['required','confirmed','min:8']
         ]);
         //Hashing PW 
-        $formFields['passowrd'] = bcrypt($formFields['password']);
+        $formFields['password'] = bcrypt($formFields['password']);
         //create user
-        $user= User::create($formFields);
+        $user = User::create($formFields);
         //login
         auth()->login($user);
         return redirect('/')->with('message','User created and logged in');
