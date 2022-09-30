@@ -77,7 +77,6 @@
                 <a href="/login" class="text-laravel"
                     >Login</a
                 >
-            </p>
-        </div>
+            </p>     
     </x-card>
 </x-layout>
