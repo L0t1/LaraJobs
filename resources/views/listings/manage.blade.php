@@ -14,12 +14,12 @@
                 @foreach($listings as $listing)
                 <tr class="border-gray-300">
                     <td
-                        class="px-4 py-8 border-t border-b border-gray-300 text-lg"
+                        class="px-4 py-8 border-t border-b border-gray-400 text-lg"
                     >
-                    <a href="/listings/{{$listing->id}}"> {{$listing->title}} </a>
+                    <a href="/listings/{{$listing->id}}">{{$listing->company}} &nbsp; <i class="fa-solid fa-arrow-right"></i>  {{$listing->title}}  </a>
                     </td>
                     <td
-                        class="px-4 py-8 border-t border-b border-gray-300 text-lg"
+                        class="px-4 py-8 border-t border-b border-gray-400 text-lg"
                     >
                         <a
                             href="/listings/{{$listing->id}}/edit"
@@ -31,7 +31,7 @@
                         >
                     </td>
                     <td
-                        class="px-4 py-8 border-t border-b border-gray-300 text-lg"
+                        class="px-4 py-8 border-t border-b border-gray-400 text-lg"
                     >
                     <form method="POST" action="/listings/{{$listing->id}}">
                         @csrf
@@ -43,7 +43,7 @@
                 @endforeach
                 @else
                 <tr class="border-gray-300">
-                    <td class="px-4 py-8 border-t border-b border-gray-300 text-lg">
+                    <td class="px-4 py-8 border-t border-b border-gray-400 text-lg">
                         <p class="text-center">No Listings Found</p>
                     </td>
                 </tr>
