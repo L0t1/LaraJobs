@@ -1,6 +1,7 @@
 ## About App
 
 An app for posting or finding laravel jobs
+<hr>
 
 
 
